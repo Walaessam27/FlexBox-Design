@@ -12,11 +12,20 @@
         <div class="main-content">
             <div class="left">
                 <div class="tabs">
-                    <div>Tab 1</div>
-                    <div>Tab 2</div>
+                    <div class="tab active" onclick="showTab(1)">Tab 1</div>
+                    <div class="tab" onclick="showTab(2)">Tab 2</div>
+                    <div class="tab" onclick="showTab(3)">Tab 3</div> 
                 </div>
                 <div class="content-box">
-                    <div class="arrow">➜</div>
+                    <div id="tab-1" class="tab-content active-content">
+                        <p>This is the content for Tab 1</p>
+                    </div>
+                    <div id="tab-2" class="tab-content" style="display:none;">
+                        <p>This is the content for Tab 2</p>
+                    </div>
+                    <div id="tab-3" class="tab-content" style="display:none;">
+                        <p>This is the content for Tab 3</p> 
+                    </div>
                 </div>
             </div>
             <div class="right">
@@ -72,7 +81,7 @@
                 </div>
             </div>
             <div class="identity">
-                <div class="box-separator"></div> <!-- Added box above Item 11 -->
+                <div class="box-separator"></div>
                 <div class="identity-card">
                     <div class="long-box">Item 11</div>
                     <p class="identity-description">

@@ -29,45 +29,50 @@ body {
     position: relative;
 }
 
-.content-tabs {
-    position: relative;
-}
-
-.content-tabs .tabs {
+.tabs {
     display: flex;
+    justify-content: flex-start;
     background-color: #fff;
-    padding: 10px;
     border-bottom: 1px solid #ccc;
     position: relative;
-    top: -10px;
-    z-index: 1;
+    z-index: 10;
 }
 
-.content-tabs .tabs div {
-    flex: 1;
-    background-color: #ccc;
-    height: 30px;
-    margin-right: 10px;
+.tab {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+.tab.active {
+    background-color: #333;
+    color: #fff;
+    border-bottom: none;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+.content-box {
+    background-color: #666;
+    height: 300px;
+    margin-top: 0;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.content-tabs .tabs div:last-child {
-    margin-right: 0;
-}
-
-.content-tabs .content {
-    background-color: #666;
-    height: 300px;
-    margin-top: -10px;
-    padding-top: 40px;
     position: relative;
+    overflow-y: auto;
 }
 
-.content-description {
-    font-size: 14px;
+.content-box p {
     color: #fff;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -177,20 +182,9 @@ body {
     margin: 10px 0;
 }
 
-.content-box {
-    background-color: #666;
-    height: 300px;
-    margin-top: 10px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
 .box-separator {
-    background-color: #999; 
-    height: 20px; 
+    background-color: #999;
+    height: 20px;
     width: 300px;
     margin-bottom: 10px;
 }
