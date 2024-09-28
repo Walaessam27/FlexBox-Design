@@ -187,3 +187,10 @@ body {
     justify-content: center;
     position: relative;
 }
+
+.box-separator {
+    background-color: #999; 
+    height: 20px; 
+    width: 300px;
+    margin-bottom: 10px;
+}
