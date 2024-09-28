@@ -29,6 +29,11 @@ body {
     position: relative;
 }
 
+.tabs-container {
+    display: flex;
+    align-items: center;
+}
+
 .tabs {
     display: flex;
     justify-content: flex-start;
@@ -58,6 +63,12 @@ body {
     background-color: #ddd;
 }
 
+.arrow {
+    font-size: 20px; 
+    color: #333; 
+    margin-left: 670px; 
+}
+
 .content-box {
     background-color: #666;
     height: 300px;
@@ -74,14 +85,6 @@ body {
     color: #fff;
     font-size: 16px;
     text-align: center;
-}
-
-.main-content .arrow {
-    position: absolute;
-    top: -30px;
-    right: 10px;
-    font-size: 20px;
-    color: #666;
 }
 
 .main-content .right {
